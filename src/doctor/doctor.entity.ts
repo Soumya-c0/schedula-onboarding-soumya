@@ -1,5 +1,5 @@
-import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
-import { Patient } from '../patient/patient.entity';
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from 'typeorm';
+import { User } from '../user/user.entity';
 
 @Entity()
 export class Doctor {
@@ -7,11 +7,11 @@ export class Doctor {
   id!: number;
 
   @Column()
-  name!: string;
-
-  @Column()
   specialization!: string;
 
-  @OneToMany(() => Patient, (patient) => patient.doctor)
-  patients!: Patient[];
+  @Column()
+  experience!: number; // Added new field for experience (in years)
+
+  @ManyToOne(() => User, (user) => user.doctors)
+  user!: User;
 }

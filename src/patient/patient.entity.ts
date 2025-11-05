@@ -1,4 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from 'typeorm';
+import { User } from '../user/user.entity';
 import { Doctor } from '../doctor/doctor.entity';
 
 @Entity()
@@ -7,14 +8,11 @@ export class Patient {
   id!: number;
 
   @Column()
-  name!: string;
+  condition!: string;
 
-  @Column()
-  age!: number;
-
-  @Column()
-  disease!: string;
-
-  @ManyToOne(() => Doctor, (doctor) => doctor.patients)
+  @ManyToOne(() => Doctor, (doctor) => doctor.id)
   doctor!: Doctor;
+
+  @ManyToOne(() => User, (user) => user.patients)
+  user!: User;
 }
