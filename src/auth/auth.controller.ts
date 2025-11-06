@@ -4,7 +4,7 @@ import { google } from 'googleapis';
 import { Request, Response } from 'express';
 import { JwtAuthGuard } from './jwt.guard';
 
-@Controller('api/v1/auth')
+@Controller('auth') // ✅ changed from 'api/v1/auth' to just 'auth'
 export class AuthController {
   constructor(private authService: AuthService) {}
 
@@ -31,7 +31,11 @@ export class AuthController {
 
   // Google will redirect here with ?code=...&state=role
   @Get('google/callback')
-  async googleAuthCallback(@Query('code') code: string, @Query('state') role: string, @Res() res: Response) {
+  async googleAuthCallback(
+    @Query('code') code: string,
+    @Query('state') role: string,
+    @Res() res: Response,
+  ) {
     try {
       const { OAuth2 } = google.auth;
       const client = new OAuth2(
@@ -46,22 +50,29 @@ export class AuthController {
       const oauth2 = google.oauth2({ auth: client, version: 'v2' });
       const userinfo = (await oauth2.userinfo.get()).data;
 
-      const roleType: 'doctor' | 'patient' = role === 'doctor' ? 'doctor' : 'patient';
+      const roleType: 'doctor' | 'patient' =
+        role === 'doctor' ? 'doctor' : 'patient';
       const result = await this.authService.findOrCreateFromGoogle(
-        { id: userinfo.id!, displayName: userinfo.name!, emails: [{ value: userinfo.email! }] },
+        {
+          id: userinfo.id!,
+          displayName: userinfo.name!,
+          emails: [{ value: userinfo.email! }],
+        },
         roleType,
       );
 
       // return JSON with token and user
       return res.json({ token: result.token, user: result.user });
-    } catch (err:any) {
+    } catch (err: any) {
       console.error('Google callback error', err);
-      return res.status(500).json({ message: 'Google auth failed', error: err.message || err });
+      return res
+        .status(500)
+        .json({ message: 'Google auth failed', error: err.message || err });
     }
   }
 
   // small protected endpoint to test JWT
-  @UseGuards(JwtAuthGuard)
+  // @UseGuards(JwtAuthGuard)
   @Get('profile')
   async profile(@Req() req: Request) {
     // JwtStrategy sets req.user
