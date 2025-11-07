@@ -4,6 +4,7 @@ import { ConfigModule } from '@nestjs/config';
 import { User } from './user/user.entity';
 import { Doctor } from './doctor/doctor.entity';
 import { Patient } from './patient/patient.entity';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { Patient } from './patient/patient.entity';
       synchronize: true,
       logging:true, // auto-create tables (for dev only)
     }),
+    AuthModule,
     TypeOrmModule.forFeature([User, Doctor, Patient]),
   ],
 })
