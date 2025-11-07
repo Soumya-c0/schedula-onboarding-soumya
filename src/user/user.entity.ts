@@ -2,6 +2,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
 import { Doctor } from '../doctor/doctor.entity';
 import { Patient } from '../patient/patient.entity';
+import { VerificationToken } from '../verification/verification.entity';
 
 export type UserRole = 'doctor' | 'patient';
 
@@ -25,9 +26,15 @@ export class User {
   @Column({ type: 'varchar', default: 'patient' })
   role!: UserRole;
 
+  @Column({ type: 'boolean', default: false })
+  isVerified!: boolean;
+
   @OneToMany(() => Doctor, (doctor) => doctor.user)
   doctors!: Doctor[];
 
   @OneToMany(() => Patient, (patient) => patient.user)
   patients!: Patient[];
+
+  @OneToMany(() => VerificationToken, (t) => t.user)
+  verificationTokens!: VerificationToken[];
 }
