@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 020e6de8e51ce3154d1216ee7ea24be3e6cca152 Soumya-c0 <soumyamurthy43@gmail.com> 1762258931 +0530	branch: Created from HEAD
+020e6de8e51ce3154d1216ee7ea24be3e6cca152 fcb1af73687810d5b37c1706d3f38298cffb29ba Soumya-c0 <soumyamurthy43@gmail.com> 1762262516 +0530	commit: Add environment example file
+fcb1af73687810d5b37c1706d3f38298cffb29ba d2458108394887dc9ece9cc99dcd5988230f65e3 Soumya-c0 <soumyamurthy43@gmail.com> 1762263653 +0530	commit: feat(database): setup TypeORM with Postgres and add entities
+d2458108394887dc9ece9cc99dcd5988230f65e3 b743b86bf94a2e790bd1c34247aabb0d1a700aaa Soumya-c0 <soumyamurthy43@gmail.com> 1762324652 +0530	commit: review changes: add experience to doctor and connect doctor and patient to user

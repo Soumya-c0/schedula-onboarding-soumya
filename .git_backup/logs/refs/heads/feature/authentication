@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 4285a9e0ad81646d64e6b71b2b9d32a549afa756 Soumya-c0 <soumyamurthy43@gmail.com> 1762352282 +0530	branch: Created from HEAD
+4285a9e0ad81646d64e6b71b2b9d32a549afa756 b743b86bf94a2e790bd1c34247aabb0d1a700aaa Soumya-c0 <soumyamurthy43@gmail.com> 1762352487 +0530	branch: Reset to feature/db-setup
+b743b86bf94a2e790bd1c34247aabb0d1a700aaa 1355996b51db87bbf57b5600891aa4795e3c4be0 Soumya-c0 <soumyamurthy43@gmail.com> 1762360927 +0530	commit: Added Google OAuth and JWT authentication logic
+1355996b51db87bbf57b5600891aa4795e3c4be0 9e0ade32b493f01c4555705f79339422003de843 Soumya-c0 <soumyamurthy43@gmail.com> 1762428047 +0530	commit: added Google auth + JWT flow
+9e0ade32b493f01c4555705f79339422003de843 2957de51e8c29f53623a7d7d61cbe8db7dbf2d13 Soumya-c0 <soumyamurthy43@gmail.com> 1762495083 +0530	commit: wip: save progress

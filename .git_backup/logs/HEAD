@@ -1,0 +1,28 @@
+0000000000000000000000000000000000000000 4285a9e0ad81646d64e6b71b2b9d32a549afa756 Soumya-c0 <soumyamurthy43@gmail.com> 1762176977 +0530	clone: from https://github.com/PearlThoughtsInternship/SchedulaTeam_API_Artisans.git
+4285a9e0ad81646d64e6b71b2b9d32a549afa756 4285a9e0ad81646d64e6b71b2b9d32a549afa756 Soumya-c0 <soumyamurthy43@gmail.com> 1762177004 +0530	checkout: moving from main to intern/soumya-main
+4285a9e0ad81646d64e6b71b2b9d32a549afa756 4285a9e0ad81646d64e6b71b2b9d32a549afa756 Soumya-c0 <soumyamurthy43@gmail.com> 1762177078 +0530	checkout: moving from intern/soumya-main to intern/soumya-main
+4285a9e0ad81646d64e6b71b2b9d32a549afa756 4285a9e0ad81646d64e6b71b2b9d32a549afa756 Soumya-c0 <soumyamurthy43@gmail.com> 1762177098 +0530	checkout: moving from intern/soumya-main to feature/hello-api
+4285a9e0ad81646d64e6b71b2b9d32a549afa756 4285a9e0ad81646d64e6b71b2b9d32a549afa756 Soumya-c0 <soumyamurthy43@gmail.com> 1762187235 +0530	reset: moving to HEAD
+4285a9e0ad81646d64e6b71b2b9d32a549afa756 020e6de8e51ce3154d1216ee7ea24be3e6cca152 Soumya-c0 <soumyamurthy43@gmail.com> 1762187354 +0530	commit: feat(hello): add HelloModule and GET /hello endpoint
+020e6de8e51ce3154d1216ee7ea24be3e6cca152 020e6de8e51ce3154d1216ee7ea24be3e6cca152 Soumya-c0 <soumyamurthy43@gmail.com> 1762258931 +0530	checkout: moving from feature/hello-api to feature/db-setup
+020e6de8e51ce3154d1216ee7ea24be3e6cca152 fcb1af73687810d5b37c1706d3f38298cffb29ba Soumya-c0 <soumyamurthy43@gmail.com> 1762262516 +0530	commit: Add environment example file
+fcb1af73687810d5b37c1706d3f38298cffb29ba d2458108394887dc9ece9cc99dcd5988230f65e3 Soumya-c0 <soumyamurthy43@gmail.com> 1762263653 +0530	commit: feat(database): setup TypeORM with Postgres and add entities
+d2458108394887dc9ece9cc99dcd5988230f65e3 b743b86bf94a2e790bd1c34247aabb0d1a700aaa Soumya-c0 <soumyamurthy43@gmail.com> 1762324652 +0530	commit: review changes: add experience to doctor and connect doctor and patient to user
+b743b86bf94a2e790bd1c34247aabb0d1a700aaa 4285a9e0ad81646d64e6b71b2b9d32a549afa756 Soumya-c0 <soumyamurthy43@gmail.com> 1762348108 +0530	checkout: moving from feature/db-setup to main
+4285a9e0ad81646d64e6b71b2b9d32a549afa756 4285a9e0ad81646d64e6b71b2b9d32a549afa756 Soumya-c0 <soumyamurthy43@gmail.com> 1762348174 +0530	checkout: moving from main to feat/google-oauth
+4285a9e0ad81646d64e6b71b2b9d32a549afa756 b743b86bf94a2e790bd1c34247aabb0d1a700aaa Soumya-c0 <soumyamurthy43@gmail.com> 1762348500 +0530	checkout: moving from feat/google-oauth to feature/db-setup
+b743b86bf94a2e790bd1c34247aabb0d1a700aaa 4285a9e0ad81646d64e6b71b2b9d32a549afa756 Soumya-c0 <soumyamurthy43@gmail.com> 1762352234 +0530	checkout: moving from feature/db-setup to main
+4285a9e0ad81646d64e6b71b2b9d32a549afa756 4285a9e0ad81646d64e6b71b2b9d32a549afa756 Soumya-c0 <soumyamurthy43@gmail.com> 1762352282 +0530	checkout: moving from main to feature/authentication
+4285a9e0ad81646d64e6b71b2b9d32a549afa756 b743b86bf94a2e790bd1c34247aabb0d1a700aaa Soumya-c0 <soumyamurthy43@gmail.com> 1762352397 +0530	checkout: moving from feature/authentication to feature/db-setup
+b743b86bf94a2e790bd1c34247aabb0d1a700aaa b743b86bf94a2e790bd1c34247aabb0d1a700aaa Soumya-c0 <soumyamurthy43@gmail.com> 1762352457 +0530	checkout: moving from feature/db-setup to feature/db-setup
+b743b86bf94a2e790bd1c34247aabb0d1a700aaa b743b86bf94a2e790bd1c34247aabb0d1a700aaa Soumya-c0 <soumyamurthy43@gmail.com> 1762352492 +0530	checkout: moving from feature/db-setup to feature/authentication
+b743b86bf94a2e790bd1c34247aabb0d1a700aaa 1355996b51db87bbf57b5600891aa4795e3c4be0 Soumya-c0 <soumyamurthy43@gmail.com> 1762360927 +0530	commit: Added Google OAuth and JWT authentication logic
+1355996b51db87bbf57b5600891aa4795e3c4be0 9e0ade32b493f01c4555705f79339422003de843 Soumya-c0 <soumyamurthy43@gmail.com> 1762428047 +0530	commit: added Google auth + JWT flow
+9e0ade32b493f01c4555705f79339422003de843 2957de51e8c29f53623a7d7d61cbe8db7dbf2d13 Soumya-c0 <soumyamurthy43@gmail.com> 1762495083 +0530	commit: wip: save progress
+2957de51e8c29f53623a7d7d61cbe8db7dbf2d13 2957de51e8c29f53623a7d7d61cbe8db7dbf2d13 Soumya-c0 <soumyamurthy43@gmail.com> 1762495108 +0530	checkout: moving from feature/authentication to feature/verification
+2957de51e8c29f53623a7d7d61cbe8db7dbf2d13 fba90a7c0571e6ae7d61fc80c84032e06d419909 Soumya-c0 <soumyamurthy43@gmail.com> 1762510078 +0530	commit: feat(verification): add OTP-based verification flow for users
+fba90a7c0571e6ae7d61fc80c84032e06d419909 3e89acf822258f2065cd6dc0de15242bd4d0c4b6 Soumya-c0 <soumyamurthy43@gmail.com> 1762602086 +0530	commit: update verification
+3e89acf822258f2065cd6dc0de15242bd4d0c4b6 4285a9e0ad81646d64e6b71b2b9d32a549afa756 Soumya-c0 <soumyamurthy43@gmail.com> 1762602092 +0530	checkout: moving from feature/verification to intern/soumya-main
+4285a9e0ad81646d64e6b71b2b9d32a549afa756 024d7afc44264b94e70e0d268b5e785680d824ed Soumya-c0 <soumyamurthy43@gmail.com> 1762602143 +0530	pull origin intern/soumya-main: Fast-forward
+024d7afc44264b94e70e0d268b5e785680d824ed 024d7afc44264b94e70e0d268b5e785680d824ed Soumya-c0 <soumyamurthy43@gmail.com> 1762602166 +0530	checkout: moving from intern/soumya-main to feature/onboarding
+024d7afc44264b94e70e0d268b5e785680d824ed ddb674c778487609b9d3e33a7d48a1d2841f84be Soumya-c0 <soumyamurthy43@gmail.com> 1762602240 +0530	commit: feat(onboarding) implemented onboarding of doctor and patient

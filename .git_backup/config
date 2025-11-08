@@ -1,0 +1,36 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/PearlThoughtsInternship/SchedulaTeam_API_Artisans.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+	vscode-merge-base = origin/main
+[branch "intern/soumya-main"]
+	vscode-merge-base = origin/main
+	remote = origin
+	merge = refs/heads/intern/soumya-main
+[branch "feature/hello-api"]
+	vscode-merge-base = origin/intern/soumya-main
+	remote = origin
+	merge = refs/heads/feature/hello-api
+[branch "feature/db-setup"]
+	vscode-merge-base = origin/feature/hello-api
+	remote = origin
+	merge = refs/heads/feature/db-setup
+[branch "feat/google-oauth"]
+	vscode-merge-base = origin/main
+[branch "feature/authentication"]
+	vscode-merge-base = origin/main
+[branch "feature/verification"]
+	vscode-merge-base = origin/main
+	remote = origin
+	merge = refs/heads/feature/verification
+[branch "feature/onboarding"]
+	vscode-merge-base = origin/intern/soumya-main
