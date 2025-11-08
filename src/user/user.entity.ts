@@ -25,6 +25,12 @@ export class User {
   @Column({ type: 'varchar', default: 'patient' })
   role!: UserRole;
 
+  @Column({ default: false })
+isVerified!: boolean;
+
+@Column({ default: false })
+isOnboarded!: boolean;
+
   @OneToMany(() => Doctor, (doctor) => doctor.user)
   doctors!: Doctor[];
 
