@@ -5,6 +5,7 @@ import { User } from './user/user.entity';
 import { Doctor } from './doctor/doctor.entity';
 import { Patient } from './patient/patient.entity';
 import { AuthModule } from './auth/auth.module';
+import { DoctorModule } from './doctor/doctor.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { AuthModule } from './auth/auth.module';
       logging:true, // auto-create tables (for dev only)
     }),
     AuthModule,
+    DoctorModule,
     TypeOrmModule.forFeature([User, Doctor, Patient]),
   ],
 })
