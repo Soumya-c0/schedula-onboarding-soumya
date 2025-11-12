@@ -5,6 +5,8 @@ import { User } from './user/user.entity';
 import { Doctor } from './doctor/doctor.entity';
 import { Patient } from './patient/patient.entity';
 import { AuthModule } from './auth/auth.module';
+import { VerificationModule } from './verification/verification.module';
+import { VerificationToken } from './verification/verification.entity';
 import { DoctorModule } from './doctor/doctor.module';
 
 @Module({
@@ -19,11 +21,12 @@ import { DoctorModule } from './doctor/doctor.module';
       username: process.env.DB_USERNAME,
       password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME,
-      entities: [User, Doctor, Patient],
+      entities: [User, Doctor, Patient, VerificationToken],
       synchronize: true,
       logging:true, // auto-create tables (for dev only)
     }),
     AuthModule,
+    VerificationModule,
     DoctorModule,
     TypeOrmModule.forFeature([User, Doctor, Patient]),
   ],
