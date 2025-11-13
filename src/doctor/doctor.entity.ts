@@ -1,5 +1,5 @@
 // src/doctor/doctor.entity.ts
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn } from 'typeorm';
 import { User } from '../user/user.entity';
 
 @Entity()
@@ -33,5 +33,6 @@ export class Doctor {
   totalCapacity!: number; // total patients for stream scheduling
 
   @ManyToOne(() => User, (user) => user.doctors)
+  @JoinColumn({ name: 'userId' })
   user!: User;
 }
