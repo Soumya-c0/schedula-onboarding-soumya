@@ -6,6 +6,8 @@ import { Doctor } from './doctor/doctor.entity';
 import { Patient } from './patient/patient.entity';
 import { AuthModule } from './auth/auth.module';
 import { DoctorModule } from './doctor/doctor.module';
+import { ElasticModule } from './elastic/elastic.module';
+import { ElasticSlot } from './elastic/elastic-slot.entity';
 
 @Module({
   imports: [
@@ -15,17 +17,17 @@ import { DoctorModule } from './doctor/doctor.module';
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: process.env.DB_HOST,
-      port: parseInt(process.env.DB_PORT!, 10),
+      port: parseInt(process.env.DB_PORT!, 10),S
       username: process.env.DB_USERNAME,
       password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME,
-      entities: [User, Doctor, Patient],
+      entities: [User, Doctor, Patient, ElasticSlot,],
       synchronize: true,
       logging:true, // auto-create tables (for dev only)
     }),
     AuthModule,
-    DoctorModule,
-    TypeOrmModule.forFeature([User, Doctor, Patient]),
+    DoctorModule, 
+    ElasticModule,
   ],
 })
 export class AppModule {}
